@@ -43,7 +43,8 @@ def hit?(card_total)
   if choice == "s"
     tot
     elsif choice == "h"
-    tot += deal_card
+    new = deal_card
+    tot += new
   else
     invalid_command
     prompt_user
