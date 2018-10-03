@@ -62,11 +62,11 @@ end
 
 def runner
   # code runner here
-#  welcome
- # sum = initial_round
-#  while sum <= 21
-#    sum += hit?(sum)
- # end
-#end_game(sum)
+  welcome
+  sum = initial_round
+  while sum <= 21
+    sum += hit?(sum)
+  end
+end_game(sum)
 end
     
