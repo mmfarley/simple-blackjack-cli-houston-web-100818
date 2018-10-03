@@ -37,19 +37,19 @@ end
 
 def hit?(card_total)
   # code hit? here
+  tot = card_total
   prompt_user
   choice = get_user_input
-  case choice
-  when "s"
-    card_total
-  when "h"
-    card_total += deal_card
+  if choice == "s"
+    tot
+    elsif choice == "h"
+    tot += deal_card
   else
     invalid_command
     prompt_user
-    card_total
+    tot
   end
-  card_total
+  tot
 end
 
 def invalid_command
