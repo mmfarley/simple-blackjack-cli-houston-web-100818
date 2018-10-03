@@ -67,7 +67,6 @@ def runner
   sum = initial_round
   while sum <= 21
     hit?(sum)
-    
   end
 end_game(sum)
 end
