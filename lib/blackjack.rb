@@ -49,6 +49,7 @@ def hit?(card_total)
     prompt_user
     card_total
   end
+  card_total
 end
 
 def invalid_command
@@ -65,7 +66,8 @@ def runner
   welcome
   sum = initial_round
   while sum <= 21
-    sum += hit?(sum)
+    hit?(sum)
+    
   end
 end_game(sum)
 end
