@@ -63,8 +63,7 @@ def runner
   # code runner here
   welcome
   sum = initial_round
-  until sum > 21
-    prompt_user
+  while sum <= 21
     hit?(sum)
   end
 end_game(sum)
