@@ -41,20 +41,18 @@ def hit?(card_total)
   choice = get_user_input
   case choice
   when "s"
-   # card_total
   when "h"
     card_total += deal_card
   else
     invalid_command
     prompt_user
-   # card_total
   end
   card_total
 end
 
 def invalid_command
   # code invalid_command here
-  "Please enter a valid command"
+  puts "Please enter a valid command"
 end
 
 #####################################################
